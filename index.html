@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Informações sobre o Dramin</title>
+
+  <style>
+    /* ======== VARIÁVEIS DE COR ======== */
+    :root {
+      --bg: #f5f7fa;
+      --primary: #004080;
+      --secondary: #0077cc;
+      --text: #222;
+      --card: #ffffff;
+    }
+
+    /* ======== ESTILOS GERAIS ======== */
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-top: 70px; /* espaço pro menu fixo */
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    /* ======== CABEÇALHO ======== */
+    header {
+      background: var(--primary);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 12px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: var(--secondary);
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      background: #005fa3;
+    }
+
+    /* ======== CONTEÚDO ======== */
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: var(--card);
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    
+    /* ============ Imagens ============*/
+    .gallery img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      display: block;
+      margin: 12px auto;
+    }
+
+    /* ======== RODAPÉ ======== */
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* ======== BOTÃO VOLTAR AO TOPO ======== */
+    #topo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: none;
+    }
+    #topo:hover {
+      background: #005fa3;
+    }
+
+    /* ======== RESPONSIVO ======== */
+    @media (max-width: 650px) {
+      nav ul {
+        flex-direction: column;
+        gap: 4px;
+      }
+      nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dramim</h1>
+    <nav>
+      <ul>
+        <li><a href="#para-o-que-serve">Para o que serve</a></li>
+        <li><a href="#efeitos-colaterais">Efeitos colaterais</a></li>
+        <li><a href="#posologia">Posologia</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#estrutura-molecular">Estrutura Molecular</a></li>
+        <li><a href="#contra-indicacoes">Contraindicações</a></li>
+        <li><a href="#composicao">Composição</a></li>
+        <li><a href="#sobredosagem">Sobredosagem</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="para-o-que-serve">
+      <h2>Para o que serve</h2>
+      <p>O Dramin é indicado para prevenir e tratar náuseas e vômitos em situações como: gravidez, enjoo do movimento, após radioterapia, pré e pós-operatório. 
+        Também auxilia em transtornos vertiginosos e labirintite.</p>
+      <section id="estrutura-molecular">
+  <h2>Estrutura Molecular</h2>
+ <section id="estrutura-molecular">
+  <h2>Estrutura Molecular</h2>
+  <img src="tabela.jpeg" alt="Estrutura molecular do Dramin" style="max-width: 500px; display: block; margin: auto;">
+</section>
+
+    <section id="efeitos-colaterais">
+      <h2>Efeitos colaterais</h2>
+      <p>Visão turva, boca seca, retenção urinária, tontura, sonolência, insônia ou irritabilidade. Procure orientação médica caso ocorram reações graves.</p>
+    </section>
+
+    <section id="posologia">
+      <h2>Posologia</h2>
+      <h3>Comprimidos (adultos acima de 12 anos)</h3>
+      <p>1 a 2 comprimidos (50–100 mg) a cada 4 horas, sem ultrapassar 8 comprimidos (400 mg) em 24 horas.</p>
+      <h3>Gotas (adultos e crianças acima de 2 anos)</h3>
+      <p>1 gota/kg de peso corporal (1,25 mg/kg), respeitando a dose máxima diária recomendada pelo médico.</p>
+    </section>
+
+    <section id="galeria" class="gallery">
+      <img src="posologia.jpeg" alt="Criança tomando medicamento com colher" id="pingo">
+      <img src="pingo.jpeg" alt="Frasco com gotejador de medicamento">
+      <p><b>Dica:</b> não administre medicamentos diretamente na boca de crianças. Use sempre colher ou seringa oral.</p>
+    </section>
+
+    <section id="estrutura-molecular">
+      <h2>Estrutura Molecular</h2>
+      <img src="estrutura.jpeg" alt="Frasco com gotejador de medicamento">
+    </section>
+
+    <section id="contra-indicacoes">
+      <h2>Contraindicações</h2>
+      <p>Contraindicado para pessoas com hipersensibilidade ao dimenidrinato, à piridoxina ou a qualquer componente da fórmula. Consulte um médico antes do uso.</p>
+    </section>
+
+    <section id="composicao">
+      <h2>Composição</h2>
+      <p>Cada comprimido contém 25 mg de dimenidrinato e 5 mg de cloridrato de piridoxina. 
+        Excipientes: propilenoglicol, sacarina sódica, benzoato de sódio, aroma e água purificada.</p>
+    </section>
+
+    <section id="sobredosagem">
+      <h2>Sobredosagem</h2>
+      <p>Procure ajuda médica imediatamente. Não se automedique. Informe ao médico a quantidade ingerida e leve a embalagem, se possível. Em emergências, ligue 192 (SAMU).</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Informações gerais sobre o Dramin.  
+    ⚠️ Este site é apenas informativo e não substitui orientação médica.
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button id="topo" onclick="window.scrollTo({top:0,behavior:'smooth'});">↑</button>
+
+  <script>
+    // Mostrar botão quando descer a página
+    window.addEventListener("scroll", () => {
+      document.getElementById("topo").style.display =
+        window.scrollY > 300 ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
